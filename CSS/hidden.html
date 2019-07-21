@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Hiding Content</title>
+</head>
+
+<body>
+    <!-- This anchor tag is invisible until focused - see CSS file -->
+    <div id="skip">
+        <a href="#main_content">Skip to Main</a>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.cnn.com">CNN</a></li>
+                <li><a href="https://www.freep.com">Freep</a></li>
+                <li><a href="https://www.nbc.com">NBC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="height: 1050px; background:magenta; border: 1px solid black"></div>
+
+    <!-- A few options for hiding content -->
+    <main id="main_content">
+        <h1>How to Hide Content</h1>
+        <p style="display:none;">This content is removed from the document</p>
+        <p style="visibility:hidden">This content is hidden from the UI, but still takes up space</p>
+        <p aria-hidden="true">This content is hidden only from screen readers</p>
+    </main>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>

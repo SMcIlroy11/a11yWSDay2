@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Labels</title>
+</head>
+
+<body>
+    <h1>Labels</h1>
+    <main>
+        <!-- Good example of form labels -->
+        <form>
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name">
+            </div>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name">
+            </div>
+
+            <!-- ARIA label for form -->
+            <div><span id="pet-name">Pet's Name:</span>
+                <input type="text" aria-labelledby="pet-name"></div>
+
+
+            <!-- Example of non-informative label -->
+            <div style="margin: 10px; display:inline-block">
+                <img src="https://peopledotcom.files.wordpress.com/2018/05/cover3.jpg" width="100" height="133"><br>
+                <input type="checkbox" id="people_magazine"> <label for="people_magazine">Subscribe</label>
+            </div>
+            <div style="margin: 10px; display:inline-block">
+                <img src="http://img.timeinc.net/time/magazine/archive/covers/2006/1101061023_400.jpg" width="100"
+                    height="133"><br>
+                <input type="checkbox" id="time_magazine"> <label for="time_magazine">Subscribe</label>
+            </div>
+
+            <!-- //DO NOT DO THIS - Placeholders as labels// -->
+            <h3>DO NOT DO THIS - PLACEHOLDERS AS LABELS</h3>
+            <div>
+                <input type="text" placeholder="Last Name"> ,
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Middle Name">
+            </div>
+
+            <h3>Visual form input with aria-label</h3>
+            <div style="margin-top:20px;">
+                <label for="ssn1">Social Security Number:</label>
+                <input type="text" size="3" maxlength="3" id="ssn1"
+                    aria-label="Social Security Number first three digits"> -
+                <input type="text" size="2" maxlength="2" aria-label="middle two digits"> -
+                <input type="text" size="4" maxlength="4" aria-label="last four digits">
+            </div>
+
+            <!-- group instructions put in the legend (focusable) -->
+            <h3>Instructions</h3>
+            <fieldset>
+                <legend>Login Information (Required)</legend>
+                <label for="username">Username: </label>
+                <input type="text" id="username">
+                <label for="password">Password: </label>
+                <input type="password" id="password">
+            </fieldset>
+
+            <!-- instructions with aria-describedby -->
+            <fieldset>
+                <legend>Create Account</legend>
+                <p><label for="username">Username: </label>
+                    <input type="text" id="username"></p>
+                <p id="password-match">Password fields must match</p>
+                <p><label for="password">Password: </label>
+                    <input type="password" id="password" aria-describedby="password-match"></p>
+                <p><label for="password-2">Re-enter password: </label>
+                    <input type="password" id="password-2"></p>
+            </fieldset>
+
+            <!-- Required Fields -->
+            <p>Fields with asterisks (*) are required.</p>
+            <div>
+                <label for="firstname">First Name:*</label>
+                <input id="firstname" name="firstname" type="text" aria-required="true">
+            </div>
+            <div>
+                <label for="lastname">Last Name:*</label>
+                <input id="lastname" name="lastname" type="text" aria-required="true">
+            </div>
+            <div>
+                <label for="age">DOB:</label>
+                <input id="dob" name="dob" type="text">
+                </p>
+
+        </form>
+
+
+        <!-- Simple form which will send a POST request -->
+        <form action="" method="post">
+            <label for="POST-name">Name:</label>
+            <input id="POST-name" type="text" name="name">
+            <input type="submit" value="Save">
+        </form>
+
+        <!-- Form with fieldset, legend, and label -->
+        <form action="" method="post">
+            <fieldset>
+                <legend>Title</legend>
+                <input type="radio" name="radio" id="radio">
+                <label for="radio">Click me</label>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>

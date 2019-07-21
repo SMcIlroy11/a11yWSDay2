@@ -1,0 +1,18 @@
+#image-container {
+background-image:url("https://images.unsplash.com/photo-1517524285303-d6fc683dddf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80");
+background-repeat:no-repeat;
+float:center;
+padding:20px;
+}
+
+#background-image-text {
+font: bold 30pt calibri;
+color:black;
+text-align: center;
+}
+
+#home-link {
+    width: 40px;
+    display: block;
+    margin: 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>ARIA Examples</title>
+</head>
+
+<body>
+    <h1>Expanded Button</h1>
+    <main>
+        <div>
+            <h3>
+                <button aria-controls="button_content" aria-expanded="false" onclick="expandButton()" tabindex="0"
+                    id="trigger" aria-selected="false">I’m tall when I’m young and I’m short
+                    when I’m old. What
+                    am I?
+                </button>
+            </h3>
+            <div style="display:none" id="button_content" role="region" aria-hidden="true" aria-labelledby="trigger">
+                <p>A candle</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="button_expanded.js"></script>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>

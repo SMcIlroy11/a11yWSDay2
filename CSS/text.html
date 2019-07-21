@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Accessible CSS</title>
+</head>
+
+<body>
+    <h1>Accessible CSS</h1>
+
+    <section>
+        <h2>Text</h2>
+        <article>
+            <h3>Font Size</h3>
+            <p>Best practice for font size is between 18-20px at a
+                minimum for smaller screens. The larger the screen,
+                the larger the font size. Gone are the days of the
+                12px font size!</p>
+        </article>
+        <!-- Minimum of 1.5 for line height! -->
+        <article>
+            <h3>Line Height</h3>
+            <h4>1.2 Line Height Default</h4>
+            <p>This will not meet WCAG 2.0 standards. Boo boo boo boo!</p>
+            <h4>1.5 Line Height</h4>
+            <p>This will meet WCAG 2.0 standards! Yay yay yay yay yay!!!!!!</p>
+        </article>
+        <!-- DO NOT text-align:justify ! -->
+        <article>
+            <h3>No Text Align Justify!</h3>
+            <p>When you do text-align:justify, it creates uneven spaces when trying to modify word spacing to create
+                same length lines! </p>
+
+        </article>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>
