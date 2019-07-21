@@ -1,0 +1,81 @@
+h1 {
+      width: 300px;
+    margin-left: 260px;
+
+}
+
+#image-container {
+background-image:url("https://preview.redd.it/8c3eal5pgvb21.png?width=960&crop=smart&auto=webp&s=c42d734c1d340a3773734b4c4d5e0f17a29e7e25");
+height: 300px
+}
+
+#nav {
+    text-align: right;
+    padding-top:5px;
+}
+
+a {
+    color: #b3ffb3;
+    padding: 10px 15px 0 0;
+    outline: none;
+}
+
+#about-office-content {
+    text-align: justify;
+    font-size: 14px;
+    color: gold;
+}
+
+#submit-button {
+       text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    width: 10%;
+    padding: 5px;
+    background-color: #ff8533;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 20px 0 10px 10px;
+}
+
+
+.form-input {
+       outline: none;
+    margin: 5px;
+    padding: 5px;
+    display: inline;
+}
+
+
+#footer {
+position:fixed;
+   left:0px;
+   bottom:0px;
+   height:70px;
+   width:100%;
+   background: white;
+   color: #d966ff;
+}
+
+hr {
+  margin-top: 60px;
+}
+
+#footer span {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+
+.character-image-divs {
+    display: inline-block;
+}
+
+.image-label {
+    text-align: center;
+        display: block;
+    margin-bottom: 10px;
+}
+
+#character-section {
+    text-align: center;
+}

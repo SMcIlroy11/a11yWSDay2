@@ -1,0 +1,91 @@
+<!-- Review the document and make any necessary changes so that it is accessible -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title></title>
+</head>
+
+<body>
+    <header id="image-container" alt="The Office Background Image">
+        <!-- Add in a skip link to take to the main content -->
+        <div id="nav">
+            <a href="">Dunder Mifflin</a>
+            <a href="">Michael Scott Paper Company</a>
+            <a href="">That's What She Said</a>
+        </div>
+        <h1>My Favorite TV Show: The Office!</h1>
+    </header>
+    <main id="main-content">
+        <div id="first-section">
+            <article>
+                <h2>About The Office</h2>
+                <p id="about-office-content">The Office is an American television series based on the British television
+                    comedy of the same name. The format of the
+                    series is a parody of the fly on the wall documentary technique that intersperses traditional
+                    situation comedy segments
+                    with mock interviews with the show's characters, provides the audience access to the ongoing
+                    interior monologues for all
+                    of the main characters, as well as occasional insights into other characters within the show.
+                    <!-- Provide a more descriptive link label for screen reader users -->
+                    <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)">Read More</a>
+                    </a></p>
+            </article>
+        </div>
+        <!-- Make the images accessible -->
+        <div id="character-section">
+            <h4>My favorite characters!</h4>
+            <div class="character-image-divs">
+                <span class="image-label">Pam Beasley</span>
+                <img style="height: 192px;"
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Pam_Beesley.jpg/220px-Pam_Beesley.jpg">
+            </div>
+            <div class="character-image-divs">
+                <span class="image-label">Jim Halpert</span>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVQ8c7tzIs6Ln5o9k9GTjhAe2xk77G89BrWUhDM0eFwDBDIBdI">
+            </div>
+
+        </div>
+        <!-- add in the necessary aria attributes, and focus for the button below -->
+        <aside>
+            <div>
+                <h4>Michael Scott isms</h4>
+                <p>
+                    <button aria-controls="button_content" onclick="expandButton()" id="trigger">Would I
+                        rather be feared or loved?
+                    </button>
+                </p>
+                <div style="display:none" id="button_content" role="region" aria-labelledby="trigger">
+                    <p>Easy. Both. I want people to fear how much they love me.</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Put in directions, labels and necessary aria attribute to make this form required. Make the button accessible using aria. Bonus point for rewriting to use <fieldset> and <legend>  -->
+        <form>
+            <p>Complete the form to sign up for our newsletter!</p>
+
+            <input id="firstname" class="form-input" placeholder="First Name" name="firstname" type="text">
+
+
+            <input id="lastname" class="form-input" placeholder=" Last Name" name="lastname" type="text">
+
+            <label for="email">Email:</label>
+            <input id="email" class="form-input" name="email" type="text">
+            <div id="submit-button">Submit</div>
+        </form>
+    </main>
+    <hr>
+    <div id="footer">
+        <span>This is a final practice for the GC A11y Workshop July 2019</span>
+    </div>
+    <script type="text/javascript" src="./final.js"></script>
+    <script src="/reload/reload.js"></script>
+</body>
+
+</html>
