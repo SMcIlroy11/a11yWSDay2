@@ -15,9 +15,10 @@
     <main>
         <section>
             <!-- /aria-labelledby Example -->
-            <div class="modal" role="dialog" tabindex="0" aria-labelledby="confirm">
+            <div role="button" style="border: 1px solid black" tabindex="0" aria-labelledby="confirm">
                 <p id="confirm">Confirm your selection</p>
             </div>
+
 
 
             <!-- aria-label example -->
@@ -26,13 +27,14 @@
 
             <!-- Pseudo HTML lets you change the 
         role completely -->
+
             <p role="heading" aria-level="3">
-                Heading level 3</p>
+                Was a P now, a Heading level 3</p>
 
             <!-- Presentation role cancels heading role - 
     Screen reader will not read as a heading, 
     it will just say "How to run a marathon" -->
-            <h2 role="presentation">How to run a marathon</h2>
+            <h2 role="presentation">How to run a marathon - not a heading anymore</h2>
 
             <!-- aria-describedbty meant to be used as extra, supplemental info -->
             <label for="new-password">Choose a new password:</label>
